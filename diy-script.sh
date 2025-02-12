@@ -46,7 +46,9 @@ git_sparse_clone openwrt-18.06 https://github.com/immortalwrt/luci applications/
 #git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall package/luci-app-passwall
 #git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall2 package/luci-app-passwall2
 git_sparse_clone master https://github.com/vernesong/OpenClash luci-app-openclash
-
+git clone --depth=1 https://github.com/littletao12/openwrt-bin package/openwrt-bin
+git clone --depth=1 https://github.com/asvow/luci-app-tailscale package/luci-app-tailscale
+git clone --depth=1 https://github.com/nikkinikki-org/OpenWrt-nikki package/OpenWrt-nikki
 # Themes
 git clone --depth=1 -b 18.06 https://github.com/kiddin9/luci-theme-edge package/luci-theme-edge
 git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
