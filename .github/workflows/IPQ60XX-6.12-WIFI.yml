@@ -100,7 +100,7 @@ jobs:
         mv package/new/custom/luci-app-netspeedtest  package/new
         mv package/new/custom/speedtest-cli package/new
         rm -rf package/new/custom
-        # git clone --depth=1 https://github.com/asvow/luci-app-tailscale package/luci-app-tailscale
+        git clone --depth=1 https://github.com/asvow/luci-app-tailscale package/luci-app-tailscale
         #git clone --depth=1 https://github.com/littletao12/openwrt-bin package/openwrt-bin
         #git clone --depth=1 https://github.com/nikkinikki-org/OpenWrt-nikki package/OpenWrt-nikki
         ./scripts/feeds install -a
