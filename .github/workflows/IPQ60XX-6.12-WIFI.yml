@@ -110,6 +110,7 @@ jobs:
         [ -e files ] && mv files $OPENWRT_PATH/files
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE $OPENWRT_PATH/.config
         #修复TailScale配置文件冲突
+        cd  $OPENWRT_PATH/package/
         TS_FILE=$(find ../feeds/packages/ -maxdepth 3 -type f -wholename "*/tailscale/Makefile")
         if [ -f "$TS_FILE" ]; then
         	sed -i '/\/files/d' $TS_FILE
